@@ -1,11 +1,32 @@
 html {
   font-size: 16px;
   font-family: 'Cabin', sans-serif;
+  color: hsl(194, 10%, 30%);
+  background-color: hsl(194, 10%, 90%);
 }
 
 /*div {
   border: 1px solid black;
 }*/
+
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 1.2rem;
+}
+
+h5{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 #wrapper{
 
@@ -20,7 +41,6 @@ html {
 
   height: 64px;
   width: 100%;
-  background-color: hsl(194, 10%, 90%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +90,7 @@ html {
 /*BANNER*/
 
 #banner-container {
-  background-color: hsl(194, 10%, 80%);
+  background-color: hsl(194, 10%, 70%);
   display: flex;
   width: 100%;
   height: 472px;
@@ -78,10 +98,16 @@ html {
   justify-content: flex-start;
 }
 
-#banner-photo img {
+
+#banner-photo {
   height: 408px;
+  width: 60%;
   margin: 32px 40px 32px 24px;
+  background-image: url(../images/banner.jpg);
+  background-position: top;
+  background-size: cover;
 }
+
 
 #banner-text {
   display: flex;
@@ -89,45 +115,125 @@ html {
   justify-content: center;
   align-items: flex-start;
   height: 60%;
-  width: 280px;
+  width: 40%;
 }
 
 #banner-copy h1{
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
 #banner-copy h3 {
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 #banner-button h4 {
   color: white;
   font-size: 1rem;
-  padding: 8px 60px;
+  padding: 12px 60px;
 }
 
 #banner-button {
   background-color: hsl(194, 10%, 30%);
-  width: 100%;
+  width: 300px;
   text-align: center;
 }
 
+/*INFORMATION*/
+
+#info-container {
+  display: flex;
+}
+
+#info-container h3 {
+  margin: 0.5rem 0 1rem 0;
+}
+
+#info-container a {
+  color: hsl(194, 90%, 30%);
+  font-weight: bold;
+}
+
+#info-main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 32px 40px 32px 24px;
+}
+
+#info-main-photo {
+
+  background-image: url(../images/information-main.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 408px;
+  width: 100%;
+}
+
+#info-main-headline h1{
+  margin: 32px 20px 24px 0px;
+}
+
+#info-main-copy h5{
+  margin-top: 24px;
+}
+
+#info-column {
+  border-left: solid 1px hsl(194, 10%, 70%);
+  width: 40%;
+
+}
+
+.info-column-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+
+.info-column-item-photo {
+  width: 148px;
+  height: 148px;
+  background-position: top;
+  background-size: contain;
+
+  margin: 16px;
+}
+
+.info-column-item-copy {
+  margin-left: 20px;
+}
+
+#orientation-photo {
+  background-image: url(../images/information-orientation.jpg);
+  margin-top: 32px;
+}
+
+#campus-photo {
+  background-image: url(../images/information-campus.jpg);
+}
+
+#lecture-photo {
+  background-image: url(../images/information-guest-lecture.jpg);
+}
+
+
 /*RESPONSIVE*/
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:769px){
 
   #icons {
-
     display: none;
+  }
 
+  #lecture-item {
+    background-color: hsl(194, 10%, 70%);
   }
 
 
 }
 
-@media only screen and (max-width:769px){
+@media only screen and (max-width:768px){
 
   #logo,
   #nav {
@@ -140,8 +246,31 @@ html {
     flex-direction: column;
   }
 
-  #banner-photo img {
+  #banner-photo {
     width: 100%;
-    margin: 0px 0px 32px 0px;
+    height: 180px;
+    margin: 0px;
+
+  }
+
+  #banner-text {
+
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+
+  #banner-copy {
+
+    align-self: flex-start;
+    margin: 32px 16px 24px 16px;
+
+  }
+
+  #banner-button {
+
+    margin-left: 0 16px;
+    align-self: center;
+    width: 94%;
   }
 }
