@@ -10,7 +10,7 @@ html {
 }*/
 
 h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -222,6 +222,82 @@ h5{
   background-image: url(../images/information-guest-lecture.jpg);
 }
 
+/*COURSES*/
+
+#courses-container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(194, 10%, 70%);
+  align-items: center;
+}
+
+#courses-headline {
+  margin: 32px;
+}
+
+#courses-item-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.courses-container-row {
+  display: flex;
+  margin-top: 16px;
+}
+
+.courses-item {
+
+  background-color: hsl(194, 10%, 90%);
+  margin: 0px 16px;
+  width: 382px;
+}
+
+.courses-item-photo {
+  width: 100%;
+  height: 196px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#software {
+  background-image: url(../images/course-software.jpg);
+}
+
+#computer {
+  background-image: url(../images/course-computer-art.jpg);
+}
+
+#design {
+  background-image: url(../images/course-design.jpg);
+}
+
+#data {
+  background-image: url(../images/course-data.jpg);
+}
+
+#business {
+  background-image: url(../images/course-business.jpg);
+}
+
+#marketing {
+  background-image: url(../images/course-marketing.jpg);
+}
+
+.courses-item-title {
+  margin: 16px 16px 8px 16px;
+}
+
+.courses-item-copy {
+  margin: 0 0 24px 16px;
+  line-height: 1.7;
+}
+
+
+.courses-item-copy h3 {
+  margin-bottom: 8px;
+}
+
 
 /*RESPONSIVE*/
 
@@ -314,5 +390,30 @@ h5{
   .info-column-item-copy {
     align-self: flex-start;
     margin-left: 32px;
+  }
+
+  #courses-container {
+    background-color: hsl(194, 10%, 90%);
+    align-items: center;
+  }
+
+  #courses-headline {
+    margin-bottom: 16px;
+  }
+
+  .courses-container-row {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .courses-item-photo,
+  .courses-item-copy {
+    display: none;
+  }
+
+  .courses-item-title {
+    background-color: hsl(194, 10%, 70%);
+    padding: 16px;
+    margin-bottom: 8px;
   }
 }
