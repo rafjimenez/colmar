@@ -298,6 +298,95 @@ h5{
   margin-bottom: 8px;
 }
 
+/*THESIS*/
+
+#thesis-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px hsl(194, 10%, 70%)
+}
+
+#thesis-headline {
+  text-align: center;
+  margin: 32px;
+}
+
+#thesis-main-column {
+  display: flex;
+}
+
+#thesis-main {
+  width: 60%;
+  margin: 0 16px 32px 24px;
+
+}
+
+#thesis-main-video video {
+  width: 100%;
+  height: auto;
+}
+
+#thesis-main-title {
+  margin-top: 24px;
+}
+
+#thesis-main-copy {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+#thesis-column {
+  width: 40%;
+}
+
+.thesis-item {
+  display: flex;
+  align-items: center;
+}
+
+#fisma-item {
+  background-color: hsl(194, 10%, 70%);
+
+}
+
+.thesis-item-photo {
+  width: 148px;
+  height: 148px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 16px;
+}
+
+#fisma {
+  background-image: url(../images/thesis-fisma.jpg);
+}
+
+
+#now {
+  background-image: url(../images/thesis-now-and-then.jpg);
+}
+
+
+.thesis-item-title {
+  margin-bottom: 18px;
+}
+
+/*FOOTER*/
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 24px 40px 24px;
+}
+
+#footer-terms {
+  display: flex;
+}
+
+#footer-terms h6{
+  margin-left: 16px;
+}
+
 
 /*RESPONSIVE*/
 
@@ -415,5 +504,25 @@ h5{
     background-color: hsl(194, 10%, 70%);
     padding: 16px;
     margin-bottom: 8px;
+  }
+
+  #thesis-column,
+  #thesis-main-title,
+  #thesis-main-copy {
+    display: none;
+  }
+
+  #thesis-main {
+    width: 100%;
+    margin: 0 0 24px 0;
+
+  }
+
+  #footer-container {
+    margin: 40px 24px 16px 24px;
+  }
+
+  #footer-terms {
+    display: none;
   }
 }
